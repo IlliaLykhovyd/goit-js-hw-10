@@ -16,3 +16,237 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/**task-1**/
+.button-start {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background 250ms ease;
+}
+.button-start:hover,
+.button-start:focus {
+  background: #6c8cff;
+}
+.button-start:disabled {
+  background: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+.date-input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-color: #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin-bottom: 32px;
+}
+.date-input:disabled {
+  background: #fafafa;
+  color: #808080;
+}
+.date-input:hover {
+  color: #000000;
+  border-color: #000000;
+}
+.date-input:active,
+.date-input:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
+/**flatpickr-calendar**/
+.flatpickr-calendar {
+  background: #f5f5f5 !important;
+  border-radius: 8px !important;
+  width: 280px !important;
+  min-height: 352px !important;
+  box-sizing: border-box !important;
+  padding: 8px !important;
+  border: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.flatpickr-months {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 28px !important;
+  height: 20px !important;
+  margin-bottom: 16px !important;
+}
+.flatpickr-weekday {
+  color: #2e2f42 !important;
+  font-weight: 500 !important;
+}
+.flatpickr-day {
+  color: #2e2f42 !important;
+  border-radius: 100% !important;
+}
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover {
+  background: #4e75ff !important;
+  border-color: #4e75ff !important;
+  color: #ffffff !important;
+}
+.flatpickr-day.today {
+  border-color: #4e75ff !important;
+}
+.flatpickr-time {
+  border-top: 1px solid #d1d1d1 !important;
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+}
+/**task-2**/
+.delay-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  margin: 0 auto;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.delay-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.delay-input:hover {
+  border-color: #000000;
+}
+.state {
+  width: 360px;
+  height: 78px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.legend-state {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: left;
+  margin-left: 28px;
+}
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+}
+.radio-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #757575;
+  border-radius: 14px;
+  display: grid;
+  place-content: center;
+  transition: all 0.15s ease;
+}
+.radio-input:checked {
+  border-color: #4e75ff;
+}
+.radio-input::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4e75ff;
+  transform: scale(0);
+  transition: transform 0.15s ease;
+}
+.radio-input:checked::before {
+  transform: scale(1);
+}
+.radio-label:hover .radio-input {
+  border-color: #2f5bff;
+}
+.radio-input:active {
+  transform: scale(0.95);
+}
+.create-btn {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: all 0.15s ease;
+}
+.create-btn:hover {
+  background: #6c8cff;
+}
