@@ -64,9 +64,9 @@ function updateIntarface({ days, hours, minutes, seconds }) {
 
 startBtn.addEventListener('click', handleClick);
 function handleClick(event) {
+  startBtn.disabled = true;
+  datetimePicker.disabled = true;
   const coutDown = setInterval(() => {
-    startBtn.disabled = true;
-    datetimePicker.disabled = true;
     const startTime = userSelectedDate.getTime();
     const currentTime = new Date().getTime();
     const deltaTime = startTime - currentTime;
